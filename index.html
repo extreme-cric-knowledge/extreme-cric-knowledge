@@ -1,0 +1,416 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Extreme Cric Knowledge</title>
+
+<style>
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #eef5ed;
+  color: #183323;
+  line-height: 1.6;
+}
+
+header {
+  background: #07552d;
+  color: white;
+  padding: 22px;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 27px;
+}
+
+nav {
+  margin-top: 15px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 8px;
+  font-weight: bold;
+}
+
+.hero {
+  background: linear-gradient(120deg, #064522, #25834b);
+  color: white;
+  text-align: center;
+  padding: 75px 20px;
+}
+
+.hero h2 {
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.hero p {
+  max-width: 650px;
+  margin: auto;
+}
+
+.button {
+  display: inline-block;
+  background: #c5ed9b;
+  color: #164326;
+  padding: 12px 25px;
+  margin-top: 22px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 45px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 30px;
+  color: #07552d;
+  margin-bottom: 25px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px #00000012;
+}
+
+.card h3 {
+  color: #08713b;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #526457;
+}
+
+.player {
+  text-align: center;
+}
+
+.player h3 {
+  margin-top: 10px;
+}
+
+.record {
+  text-align: center;
+}
+
+.record strong {
+  display: block;
+  font-size: 30px;
+  color: #08713b;
+}
+
+.quiz-box {
+  background: white;
+  max-width: 650px;
+  margin: auto;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px #00000012;
+}
+
+.quiz-box button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  border: 1px solid #b7d3bb;
+  background: #f0f8ee;
+  border-radius: 9px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.quiz-box button:hover {
+  background: #d5edcf;
+}
+
+#feedback {
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+footer {
+  background: #063b20;
+  color: white;
+  text-align: center;
+  padding: 25px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>🏏 EXTREME CRIC KNOWLEDGE</h1>
+  <nav>
+    <a href="#learn">Learn</a>
+    <a href="#players">Players</a>
+    <a href="#records">Records</a>
+    <a href="#quiz">Quiz</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h2>Think Cricket. Know Cricket.</h2>
+  <p>
+    Welcome to Extreme Cric Knowledge!
+    Explore cricket rules, legendary players,
+    records, techniques and match strategies.
+    Become a true cricket expert!
+  </p>
+  <a class="button" href="#learn">Explore Cricket</a>
+</div>
+
+<section id="learn">
+  <h2 class="section-title">📚 Learn Cricket</h2>
+
+  <div class="cards">
+
+    <div class="card">
+      <h3>🏏 Cricket Basics</h3>
+      <p>Learn the rules, overs, wickets, innings,
+      formats and fielding positions.</p>
+    </div>
+
+    <div class="card">
+      <h3>⚡ Batting Knowledge</h3>
+      <p>Understand batting shots, footwork,
+      techniques and batting strategies.</p>
+    </div>
+
+    <div class="card">
+      <h3>🎯 Bowling Knowledge</h3>
+      <p>Learn fast bowling, spin bowling,
+      swing, seam and bowling variations.</p>
+    </div>
+
+    <div class="card">
+      <h3>🧠 Cricket Strategies</h3>
+      <p>Understand powerplays, run rates,
+      partnerships and captaincy.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="players">
+  <h2 class="section-title">⭐ Legendary Players</h2>
+
+  <div class="cards">
+
+    <div class="card player">
+      <h3>Sachin Tendulkar</h3>
+      <p>India | Legendary Batter</p>
+      <p>Known as the Master Blaster.</p>
+    </div>
+
+    <div class="card player">
+      <h3>Virat Kohli</h3>
+      <p>India | Batter</p>
+      <p>Known for his consistency and chasing ability.</p>
+    </div>
+
+    <div class="card player">
+      <h3>MS Dhoni</h3>
+      <p>India | Wicketkeeper-Batter</p>
+      <p>Famous for his captaincy and finishing skills.</p>
+    </div>
+
+    <div class="card player">
+      <h3>Ricky Ponting</h3>
+      <p>Australia | Batter</p>
+      <p>One of Australia's great cricket captains.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="records">
+  <h2 class="section-title">🏆 Cricket Facts & Records</h2>
+
+  <div class="cards">
+
+    <div class="card record">
+      <strong>100</strong>
+      <p>International centuries by Sachin Tendulkar.</p>
+    </div>
+
+    <div class="card record">
+      <strong>200*</strong>
+      <p>Sachin's first men's ODI double century.</p>
+    </div>
+
+    <div class="card record">
+      <strong>3</strong>
+      <p>Major international formats: Tests, ODIs and T20Is.</p>
+    </div>
+
+    <div class="card record">
+      <strong>6</strong>
+      <p>Runs for a ball hit over the boundary without bouncing.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="quiz">
+  <h2 class="section-title">🧠 Cricket Quiz</h2>
+
+  <div class="quiz-box">
+    <h3 id="question">How many legal balls are there in an over?</h3>
+
+    <div id="answers"></div>
+
+    <p id="feedback"></p>
+
+    <button id="next" onclick="nextQuestion()" hidden>
+      Next Question
+    </button>
+
+    <p id="score"></p>
+  </div>
+</section>
+
+<footer>
+  <h3>🏏 EXTREME CRIC KNOWLEDGE</h3>
+  <p>Learn Cricket. Love Cricket. Live Cricket.</p>
+  <p>Created by a cricket lover ❤️</p>
+</footer>
+
+<script>
+const questions = [
+  {
+    q: "How many legal balls are there in an over?",
+    a: ["4", "6", "8", "10"],
+    correct: 1
+  },
+  {
+    q: "What does LBW stand for?",
+    a: ["Leg Before Wicket", "Long Ball Wide", "Last Ball Win", "Leg By Wide"],
+    correct: 0
+  },
+  {
+    q: "How many runs is a six worth?",
+    a: ["2", "4", "5", "6"],
+    correct: 3
+  },
+  {
+    q: "Which country won the 2024 Men's T20 World Cup?",
+    a: ["Australia", "India", "England", "South Africa"],
+    correct: 1
+  },
+  {
+    q: "Who is known as the Master Blaster?",
+    a: ["MS Dhoni", "Virat Kohli", "Sachin Tendulkar", "Ricky Ponting"],
+    correct: 2
+  }
+];
+
+let current = 0;
+let points = 0;
+let answered = false;
+
+function showQuestion() {
+  answered = false;
+
+  document.getElementById("question").textContent =
+    questions[current].q;
+
+  document.getElementById("feedback").textContent = "";
+
+  document.getElementById("next").hidden = true;
+
+  const box = document.getElementById("answers");
+  box.innerHTML = "";
+
+  questions[current].a.forEach((answer, index) => {
+    const btn = document.createElement("button");
+
+    btn.textContent = answer;
+
+    btn.onclick = () => checkAnswer(index);
+
+    box.appendChild(btn);
+  });
+
+  document.getElementById("score").textContent =
+    "Question " + (current + 1) + " of " + questions.length;
+}
+
+function checkAnswer(index) {
+  if (answered) return;
+
+  answered = true;
+
+  const correct = questions[current].correct;
+
+  if (index === correct) {
+    points++;
+    document.getElementById("feedback").textContent =
+      "✅ Correct! Well played!";
+  } else {
+    document.getElementById("feedback").textContent =
+      "❌ Incorrect! Correct answer: " +
+      questions[current].a[correct];
+  }
+
+  document.getElementById("next").hidden = false;
+}
+
+function nextQuestion() {
+  current++;
+
+  if (current >= questions.length) {
+    document.getElementById("question").textContent =
+      "Quiz Completed! 🏆";
+
+    document.getElementById("answers").innerHTML = "";
+
+    document.getElementById("feedback").textContent =
+      "Your score: " + points + " / " + questions.length;
+
+    document.getElementById("next").textContent = "Play Again";
+
+    document.getElementById("next").onclick = () => {
+      current = 0;
+      points = 0;
+      document.getElementById("next").textContent = "Next Question";
+      document.getElementById("next").onclick = nextQuestion;
+      showQuestion();
+    };
+
+    return;
+  }
+
+  showQuestion();
+}
+
+showQuestion();
+</script>
+
+</body>
+</html>
