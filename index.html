@@ -355,32 +355,45 @@ footer {
 
 <script>
 const questions = [
-  {
-    q: "How many legal balls are there in an over?",
-    a: ["4", "6", "8", "10"],
-    correct: 1
-  },
-  {
-    q: "What does LBW stand for?",
-    a: ["Leg Before Wicket", "Long Ball Wide", "Last Ball Win", "Leg By Wide"],
-    correct: 0
-  },
-  {
-    q: "How many runs is a six worth?",
-    a: ["2", "4", "5", "6"],
-    correct: 3
-  },
-  {
-    q: "Which country won the 2024 Men's T20 World Cup?",
-    a: ["Australia", "India", "England", "South Africa"],
-    correct: 1
-  },
-  {
-    q: "Who is known as the Master Blaster?",
-    a: ["MS Dhoni", "Virat Kohli", "Sachin Tendulkar", "Ricky Ponting"],
-    correct: 2
-  }
+
+const questions = [
+  {q:"How many players are there in one cricket team?",a:["9","10","11","12"],correct:2},
+  {q:"How many legal balls are there in an over?",a:["4","5","6","8"],correct:2},
+  {q:"What does LBW stand for?",a:["Leg Before Wicket","Long Ball Wide","Last Ball Wicket","Leg By Wide"],correct:0},
+  {q:"How many runs is a boundary after bouncing?",a:["2","3","4","6"],correct:2},
+  {q:"How many runs is a six worth?",a:["4","5","6","7"],correct:2},
+  {q:"Which country won the 2024 Men's T20 World Cup?",a:["Australia","India","England","South Africa"],correct:1},
+  {q:"Who is known as the Master Blaster?",a:["MS Dhoni","Virat Kohli","Sachin Tendulkar","Rohit Sharma"],correct:2},
+  {q:"What is a hat-trick?",a:["Three fours","Three wickets in three consecutive deliveries","Three sixes","Three maiden overs"],correct:1},
+  {q:"What is a duck in cricket?",a:["Zero runs","50 runs","A wide ball","A no-ball"],correct:0},
+  {q:"How many overs are there in an ODI innings?",a:["20","40","50","60"],correct:2},
+  {q:"How many overs are there in a T20 innings?",a:["10","15","20","25"],correct:2},
+  {q:"Which format can last up to five days?",a:["T20","ODI","Test","The Hundred"],correct:2},
+  {q:"What is a yorker?",a:["A delivery pitching near the batter's feet","A slow ball","A high full toss","A spin delivery"],correct:0},
+  {q:"What is a googly?",a:["A type of leg-spin delivery","A batting shot","A fielding position","An appeal"],correct:0},
+  {q:"Who stands behind the stumps?",a:["Bowler","Wicketkeeper","Umpire","Captain"],correct:1},
+  {q:"What does the third umpire do?",a:["Bowls","Reviews certain decisions using technology","Keeps score","Chooses captain"],correct:1},
+  {q:"What is a maiden over?",a:["An over with no runs charged to the bowler","An over with six wickets","An over with six wides","The first over"],correct:0},
+  {q:"What is a no-ball?",a:["An illegal delivery","A legal delivery","A boundary","A catch"],correct:0},
+  {q:"What is a bye?",a:["Runs scored without the ball touching bat or body","Runs from a six","Runs by bowler","A dismissal"],correct:0},
+  {q:"What is a leg-bye?",a:["Runs after the ball touches the batter's body, subject to the Laws","Runs from a no-ball","Runs by keeper","A dismissal"],correct:0},
+  {q:"What is the follow-on in Test cricket?",a:["A team bats again after a sufficiently large first-innings deficit","A new ball","A fielding position","A bowling change"],correct:0},
+  {q:"What does DRS stand for?",a:["Decision Review System","Direct Run Score","Daily Review Score","Delivery Rules System"],correct:0},
+  {q:"What is a powerplay?",a:["A period with fielding restrictions","A drinks break","The last ball","A bowling style"],correct:0},
+  {q:"What is a Super Over?",a:["A tie-breaker in certain limited-overs matches","An extra Test innings","A maiden over","A bowling spell"],correct:0},
+  {q:"What is an all-rounder?",a:["A player skilled in batting and bowling","Only a batter","Only a bowler","An umpire"],correct:0},
+  {q:"What is a run-out?",a:["A batter dismissed while outside their ground when the wicket is fairly put down","A six","A catch","A wide"],correct:0},
+  {q:"What is stumping?",a:["The wicketkeeper puts down the wicket when the batter is out of their ground","A batter hits the stumps","A bowler takes a catch","A boundary"],correct:0},
+  {q:"What does a batter's strike rate measure?",a:["Runs per 100 balls faced","Runs per over","Wickets per match","Balls per innings"],correct:0},
+  {q:"What does a bowler's economy rate measure?",a:["Runs conceded per over","Wickets per match","Balls per wicket","Career runs"],correct:0},
+  {q:"What happens before a match to decide who bats first?",a:["A toss","A Super Over","A free hit","A review"],correct:0},
+  {q:"Who is famous for the helicopter shot?",a:["MS Dhoni","Rahul Dravid","Anil Kumble","Kapil Dev"],correct:0},
+  {q:"Who won the first men's ODI World Cup in 1975?",a:["India","Australia","West Indies","England"],correct:2},
+  {q:"What is the area where the bowler delivers the ball called?",a:["Pitch","Boundary","Dugout","Pavilion"],correct:0}
 ];
+
+questions.sort(() => Math.random() - 0.5);
+
 
 let current = 0;
 let points = 0;
@@ -450,6 +463,7 @@ function nextQuestion() {
     document.getElementById("next").onclick = () => {
       current = 0;
       points = 0;
+      questions.sort(() => Math.random() - 0.5);
       document.getElementById("next").textContent = "Next Question";
       document.getElementById("next").onclick = nextQuestion;
       showQuestion();
@@ -460,7 +474,6 @@ function nextQuestion() {
 
   showQuestion();
 }
-
 showQuestion();
 </script>
 
